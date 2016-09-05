@@ -16,27 +16,27 @@ mkdir </your/virtualenvs/folder>
 # cd 到那个文件夹
 cd </your/virtualenvs/folder>
 
-# 在那个文件夹下, 创建一个叫"UCIproject"的virtualenv
-virtualenv UCIproject
+# 在那个文件夹下, 创建一个叫"CityVision"的virtualenv
+virtualenv CityVision
 
-# 安装结束后, virtualenv "UCIproject"会自动被activate
+# 安装结束后, virtualenv "CityVision"会自动被activate
 ```
 
 2. pip install the requirements file. 
 ```bash
-# activate "UCIproject"这个virtualenv, 如果你已经activate, 就不用跑下面的
+# activate "CityVision"这个virtualenv, 如果你已经activate, 就不用跑下面的
 # command
-source </your/virtualenvs/folder>/UCIproject/bin/activate/
+source </your/virtualenvs/folder>/CityVision/bin/activate/
 # 在这个virtualenv里面, 安装所有依赖包
 pip install -r requirements.txt
 ```
 3. start server
 ```bash
 # 你需要一个.settings.conf 文件在本地run application
-# 这个.settings.conf 文件应该位于 UCIproject/.settings.conf
+# 这个.settings.conf 文件应该位于 CityVision/.settings.conf
 
 # 本地运行server
-cd UCIproject
+cd CityVision
 SETTINGS_CONFIG=.settings.conf python application.py 
 
 # 上面这个command的意思是: 让python 跑 application.py, 但是同时给python一个
